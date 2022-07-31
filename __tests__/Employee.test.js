@@ -25,7 +25,7 @@ test("gets an employee's id value that is a number", () => {
 
 test("get the employee's email", () => {
   const employee = new Employee("John", "Doe", 1345, "josen@email.com");
-
+  // TODO: validate email
   expect(employee.getEmail()).toEqual(expect.any(String));
 });
 

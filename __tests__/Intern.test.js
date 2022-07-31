@@ -21,7 +21,7 @@ test("gets an Intern's school", () => {
     "Carleton"
   );
 
-  expect(intern.getSchool()).toEqual(expect.objectContaining({}));
+  expect(intern.getSchool()).toEqual(expect.any(String));
 });
 
 test("getRole() should be overridden to return 'Intern'", () => {

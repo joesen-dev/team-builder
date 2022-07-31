@@ -9,14 +9,7 @@ test("shows an Engineer's github", () => {
 test("gets an Engineer's github page", () => {
   const engineer = new Engineer("John", "Doe", 45, "josen@email.com", "josen");
 
-  expect(engineer.getGithub()).toEqual(expect.objectContaining({})); // ? validate this is a github URL
-  /**
-   * * Handling asynchronous operations with jest testing
-   * ?  Consider running Jest with `--detectOpenHandles` to troubleshoot this issue
-   * ? testing inquirer prompts returns
-   * ? ReferenceError:
-   * ? You are trying to `import` a file after the Jest environment has been torn down. From __tests__/Engineer.test.js.
-   */
+  expect(engineer.getGithub()).toEqual(expect.any(String)); //? validate this is a github URL
 });
 
 test("getRole() should be overridden to return 'Engineer'", () => {
