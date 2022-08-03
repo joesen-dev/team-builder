@@ -1,8 +1,3 @@
-// const Employee = require("../lib/Employee");
-// const Manager = require("../lib/Manager");
-// const Engineer = require("../lib/Engineer");
-// const Intern = require("../lib/Intern");
-
 module.exports = (teamMembers, employeeIDs) => {
   const [Manager, Engineer1, Engineer2, Engineer3, Intern] = teamMembers;
   const manager = Manager;
@@ -20,7 +15,6 @@ module.exports = (teamMembers, employeeIDs) => {
     <!--Let browser know website is optimized for mobile-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <link rel="shortcut icon" type="avatar/png" href="./assets/images/avatars/portfolio-avatar2.png" />
     <!--Import Google Icon Font-->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
     <!--Import materialize.css-->
@@ -57,7 +51,7 @@ module.exports = (teamMembers, employeeIDs) => {
                         </tr>
                         <tr>
                         <th>Email</th>
-                        <td>${manager.email}</td>
+                        <td><a href="mailto:${manager.email}">${manager.email}</a></td>
                         </tr>
                         <tr>
                         <th>${manager.officeNumber}</th>
@@ -86,7 +80,7 @@ module.exports = (teamMembers, employeeIDs) => {
                         </tr>
                         <tr>
                         <th>Email</th>
-                        <td>${engineer1.email}</td>
+                        <td><a href="mailto:${engineer1.email}">${engineer1.email}</a></td>
                         </tr>
                         <tr>
                         <th>Github</th>
@@ -115,7 +109,7 @@ module.exports = (teamMembers, employeeIDs) => {
                         </tr>
                         <tr>
                         <th>Email</th>
-                        <td>${engineer2.email}</td>
+                        <td><a href="mailto:${engineer2.email}">${engineer2.email}</a></td>
                         </tr>
                         <tr>
                         <th>Github</th>
@@ -144,7 +138,7 @@ module.exports = (teamMembers, employeeIDs) => {
                         </tr>
                         <tr>
                         <th>Email</th>
-                        <td>${engineer3.email}</td>
+                        <td><a href="mailto:${engineer3.email}">${engineer3.email}</a></td>
                         </tr>
                         <tr>
                         <th>Github</th>
@@ -173,7 +167,7 @@ module.exports = (teamMembers, employeeIDs) => {
                         </tr>
                         <tr>
                         <th>Email</th>
-                        <td>${intern.email}</td>
+                        <td><a href="mailto:${intern.email}">${intern.email}</a></td>
                         </tr>
                         <tr>
                         <th>School</th>
@@ -189,7 +183,7 @@ module.exports = (teamMembers, employeeIDs) => {
         </section>
     </main>
 
-    <script type="text/javascript" src="/assets/js/materialize.min.js"></script>
+    <script type="text/javascript" src="./assets/js/materialize.min.js"></script>
     </body>
     </html>
     `;
