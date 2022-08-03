@@ -7,7 +7,7 @@ test("gets a Manager's office number", () => {
 });
 
 test("getRole() should be overridden to return 'Manager'", () => {
-  const employee = new Manager("John", "Doe", 1232, "josen@email.com", 1232);
+  const manager = new Manager("John", "Doe", 1232, "josen@email.com", 1232);
 
-  expect(employee.getRole()).toMatchObject(new Manager());
+  expect(manager.getRole()).toEqual(expect.stringContaining("Manager"));
 });

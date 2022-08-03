@@ -10,7 +10,13 @@ test("creates an employee object", () => {
 });
 
 test("gets an employee's first and last name value", () => {
-  const employee = new Employee("John", "Doe", 45, "josen@email.com");
+  const employee = new Employee(
+    "John",
+    "Doe",
+    45,
+    "josen@email.com",
+    "Employee"
+  );
 
   expect(employee.getName()).toEqual(
     expect.stringContaining(employee.firstName + " " + employee.lastName)
@@ -18,19 +24,37 @@ test("gets an employee's first and last name value", () => {
 });
 
 test("gets an employee's id value that is a number", () => {
-  const employee = new Employee("John", "Doe", 10);
+  const employee = new Employee(
+    "John",
+    "Doe",
+    45,
+    "josen@email.com",
+    "Employee"
+  );
 
   expect(employee.getId()).toEqual(expect.any(Number));
 });
 
 test("get the employee's email", () => {
-  const employee = new Employee("John", "Doe", 1345, "josen@email.com");
+  const employee = new Employee(
+    "John",
+    "Doe",
+    45,
+    "josen@email.com",
+    "Employee"
+  );
   // TODO: validate email
   expect(employee.getEmail()).toEqual(expect.any(String));
 });
 
-test("returns the employee object", () => {
-  const employee = new Employee("John", "Doe", 1232, "josen@email.com");
+test("get an employee's role", () => {
+  const employee = new Employee(
+    "John",
+    "Doe",
+    45,
+    "josen@email.com",
+    "Employee"
+  );
 
-  expect(employee.getRole()).toMatchObject(new Employee());
+  expect(employee.getRole()).toEqual(expect.stringContaining("Employee"));
 });

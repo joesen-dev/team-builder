@@ -21,5 +21,5 @@ test("getRole() should be overridden to return 'Engineer'", () => {
     "josen"
   );
 
-  expect(engineer.getRole()).toMatchObject(new Engineer());
+  expect(engineer.getRole()).toEqual(expect.stringContaining("Engineer"));
 });
