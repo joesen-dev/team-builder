@@ -4,9 +4,11 @@
 // const Intern = require("../lib/Intern");
 
 module.exports = (teamMembers, employeeIDs) => {
-  const [Manager, Engineer, Intern] = teamMembers;
+  const [Manager, Engineer1, Engineer2, Engineer3, Intern] = teamMembers;
   const manager = Manager;
-  const engineer = Engineer;
+  const engineer1 = Engineer1;
+  const engineer2 = Engineer2;
+  const engineer3 = Engineer3;
   const intern = Intern;
 
   return `
@@ -73,22 +75,22 @@ module.exports = (teamMembers, employeeIDs) => {
                 <div class="col s12 m6">
                 <div class="card blue-grey darken-1">
                     <div class="card-content white-text">
-                    <h4>${engineer.firstName}</h4>
+                    <h4>${engineer1.firstName}</h4>
                     <h5 class="card-title">Engineer</h5>
                     </div>
                     <div class="card-action">
                     <table>
                         <tr>
                         <th>ID</th>
-                        <td>${engineer.id}</td>
+                        <td>${engineer1.id}</td>
                         </tr>
                         <tr>
                         <th>Email</th>
-                        <td>${engineer.email}</td>
+                        <td>${engineer1.email}</td>
                         </tr>
                         <tr>
                         <th>Github</th>
-                        <td>${engineer.github}</td>
+                        <td>${engineer1.github}</td>
                         </tr>
                     </table>
                     </div>
@@ -102,22 +104,22 @@ module.exports = (teamMembers, employeeIDs) => {
                 <div class="col s12 m6">
                 <div class="card blue-grey darken-1">
                     <div class="card-content white-text">
-                    <h4>${engineer.firstName}</h4>
+                    <h4>${engineer2.firstName}</h4>
                     <h5 class="card-title">Engineer</h5>
                     </div>
                     <div class="card-action">
                     <table>
                         <tr>
                         <th>ID</th>
-                        <td>${engineer.id}</td>
+                        <td>${engineer2.id}</td>
                         </tr>
                         <tr>
                         <th>Email</th>
-                        <td>${engineer.email}</td>
+                        <td>${engineer2.email}</td>
                         </tr>
                         <tr>
                         <th>Github</th>
-                        <td>${engineer.github}</td>
+                        <td>${engineer2.github}</td>
                         </tr>
                     </table>
                     </div>
@@ -131,22 +133,22 @@ module.exports = (teamMembers, employeeIDs) => {
                 <div class="col s12 m6">
                 <div class="card blue-grey darken-1">
                     <div class="card-content white-text">
-                    <h4>${engineer.name}</h4>
+                    <h4>${engineer3.firstName}</h4>
                     <h5 class="card-title">Engineer</h5>
                     </div>
                     <div class="card-action">
                     <table>
                         <tr>
                         <th>ID</th>
-                        <td>${engineer.id}</td>
+                        <td>${engineer3.id}</td>
                         </tr>
                         <tr>
                         <th>Email</th>
-                        <td>${engineer.email}</td>
+                        <td>${engineer3.email}</td>
                         </tr>
                         <tr>
                         <th>Github</th>
-                        <td>${engineer.github}</td>
+                        <td>${engineer3.github}</td>
                         </tr>
                     </table>
                     </div>
@@ -160,7 +162,7 @@ module.exports = (teamMembers, employeeIDs) => {
                 <div class="col s12 m6">
                 <div class="card blue-grey darken-1">
                     <div class="card-content white-text">
-                    <h4>${intern.name}</h4>
+                    <h4>${intern.firstName}</h4>
                     <h5 class="card-title">Intern</h5>
                     </div>
                     <div class="card-action">
