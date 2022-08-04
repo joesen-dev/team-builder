@@ -139,6 +139,11 @@ Add a Team Member or finish building your Team
       } else if (answersData.options === "Add an Intern") {
         return promptIntern();
       } else {
+        console.log(`
+===========================================================
+An HTML page with your was created in your dist directory
+===========================================================
+`);
         return;
       }
     });

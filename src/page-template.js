@@ -34,10 +34,10 @@ module.exports = (teamMembers, employeeIDs) => {
     <main class="container">
         <section class="my-3">
         <div class="row">
-            <div class="col s12">
+            <div class="col m12">
             <!-- Manager -->
             <div class="row">
-                <div class="col s12 m6">
+                <div class="col m12 m6">
                 <div class="card blue-grey darken-1">
                     <div class="card-content white-text">
                     <h4>${manager.firstName}</h4>
@@ -46,16 +46,16 @@ module.exports = (teamMembers, employeeIDs) => {
                     <div class="card-action">
                     <table>
                         <tr>
-                        <th>ID</th>
+                        <th>ID:</th>
                         <td>${manager.id}</td>
                         </tr>
                         <tr>
-                        <th>Email</th>
+                        <th>Email:</th>
                         <td><a href="mailto:${manager.email}">${manager.email}</a></td>
                         </tr>
                         <tr>
-                        <th>${manager.officeNumber}</th>
-                        <td>1</td>
+                        <th>Office number:</th>
+                        <td>${manager.officeNumber}</td>
                         </tr>
                     </table>
                     </div>
@@ -66,7 +66,7 @@ module.exports = (teamMembers, employeeIDs) => {
             <div class="col s6">
             <!-- ALEC -->
             <div class="row">
-                <div class="col s12 m6">
+                <div class="col m12 m6">
                 <div class="card blue-grey darken-1">
                     <div class="card-content white-text">
                     <h4>${engineer1.firstName}</h4>
@@ -75,15 +75,15 @@ module.exports = (teamMembers, employeeIDs) => {
                     <div class="card-action">
                     <table>
                         <tr>
-                        <th>ID</th>
+                        <th>ID:</th>
                         <td>${engineer1.id}</td>
                         </tr>
                         <tr>
-                        <th>Email</th>
+                        <th>Email:</th>
                         <td><a href="mailto:${engineer1.email}">${engineer1.email}</a></td>
                         </tr>
                         <tr>
-                        <th>Github</th>
+                        <th>Github:</th>
                         <td>${engineer1.github}</td>
                         </tr>
                     </table>
@@ -95,7 +95,7 @@ module.exports = (teamMembers, employeeIDs) => {
             <div class="col s6">
             <!-- GRACE - Engineer -->
             <div class="row">
-                <div class="col s12 m6">
+                <div class="col m12 m6">
                 <div class="card blue-grey darken-1">
                     <div class="card-content white-text">
                     <h4>${engineer2.firstName}</h4>
@@ -104,15 +104,15 @@ module.exports = (teamMembers, employeeIDs) => {
                     <div class="card-action">
                     <table>
                         <tr>
-                        <th>ID</th>
+                        <th>ID:</th>
                         <td>${engineer2.id}</td>
                         </tr>
                         <tr>
-                        <th>Email</th>
+                        <th>Email:</th>
                         <td><a href="mailto:${engineer2.email}">${engineer2.email}</a></td>
                         </tr>
                         <tr>
-                        <th>Github</th>
+                        <th>Github:</th>
                         <td>${engineer2.github}</td>
                         </tr>
                     </table>
@@ -124,7 +124,7 @@ module.exports = (teamMembers, employeeIDs) => {
             <div class="col s6">
             <!-- TAMMER -- Engineer-->
             <div class="row">
-                <div class="col s12 m6">
+                <div class="col m12 m6">
                 <div class="card blue-grey darken-1">
                     <div class="card-content white-text">
                     <h4>${engineer3.firstName}</h4>
@@ -133,15 +133,15 @@ module.exports = (teamMembers, employeeIDs) => {
                     <div class="card-action">
                     <table>
                         <tr>
-                        <th>ID</th>
+                        <th>ID:</th>
                         <td>${engineer3.id}</td>
                         </tr>
                         <tr>
-                        <th>Email</th>
+                        <th>Email:</th>
                         <td><a href="mailto:${engineer3.email}">${engineer3.email}</a></td>
                         </tr>
                         <tr>
-                        <th>Github</th>
+                        <th>Github:</th>
                         <td>${engineer3.github}</td>
                         </tr>
                     </table>
@@ -153,7 +153,7 @@ module.exports = (teamMembers, employeeIDs) => {
             <div class="col s6">
             <!-- JOHN - Intern -->
             <div class="row">
-                <div class="col s12 m6">
+                <div class="col m12 m6">
                 <div class="card blue-grey darken-1">
                     <div class="card-content white-text">
                     <h4>${intern.firstName}</h4>
@@ -162,15 +162,15 @@ module.exports = (teamMembers, employeeIDs) => {
                     <div class="card-action">
                     <table>
                         <tr>
-                        <th>ID</th>
+                        <th>ID:</th>
                         <td>${intern.id}</td>
                         </tr>
                         <tr>
-                        <th>Email</th>
+                        <th>Email:</th>
                         <td><a href="mailto:${intern.email}">${intern.email}</a></td>
                         </tr>
                         <tr>
-                        <th>School</th>
+                        <th>School:</th>
                         <td>${intern.school}</td>
                         </tr>
                     </table>
