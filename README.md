@@ -2,7 +2,11 @@
 
 ## Description
 
-AS A manager, I WANT to generate a webpage that displays my team's basic info, SO THAT I have quick access to their emails and GitHub profiles.
+AS A manager
+
+I WANT to generate a webpage that displays my team's basic info
+
+SO THAT I have quick access to their emails and GitHub profiles
 
 ## Table of Contents
 
@@ -38,7 +42,9 @@ Now you’re ready to start building your Team!
 
 > `node index.js`
 
-## License
+Answer all prompts and the app will to the rest!
+
+This [demo](https://drive.google.com/file/d/15X5Y2DvB4sCdZF4dJ79b4wmZmRyJWjm7/view?usp=sharing) shows the app in action!
 
 #### Questions
 
