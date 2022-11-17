@@ -10,13 +10,9 @@
 .card {
   background: linear-gradient(var(--sage), var(--light));
 }
+.card-header {
+  background-color: var(--secondary);
+}
 .credentials {
   opacity: 0.95;
-}
-th {
-  border-right: 1px solid var(--dark) !important;
-}
-
-.simple-linear {
-  background: linear-gradient(blue, pink);
 }
