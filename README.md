@@ -11,7 +11,18 @@ SO THAT I have quick access to their emails and GitHub profiles
 ## Table of Contents
 
 - [Installation](#installation)
+- [Technologies](#technologies)
 - [Usage](#usage)
+- [Screenshots](#screenshots)
+- [Questions](#questions)
+
+## Technologies
+
+- NodeJS
+- Bootstrap CSS
+- Inquirer
+- HTML, CSS, and JavaScript
+- Jest
 
 ## Installation
 
@@ -23,32 +34,31 @@ You will need Node.js to run the application. You can find a guide on installati
 
 **Step 2**
 
-> cd to the directory with your cloned repo. In this case, you'll want to be in the "Develop" directory.
+> cd to the directory with your cloned repo.
 
 **Step 3**
-The repo comes with a package.json with the required dependencies to type the following command into your CLI
+Install the dependencies to generate your node_modules and a package-lock.json
 
-> `npm install`
-
-You should now see a directory called node_modules and a package-lock.json.
+    npm install
 
 Now you’re ready to start building your Team!
 
 ## Usage
 
-##### To run the application, type enter <sub>_node \<filename\>_</sub> into your command prompt.
+To run the application, type the following command in your terminal.
 
-**Use case example**
+    node index.js
 
-> `node index.js`
-
-Answer all prompts and the app will to the rest!
+Answer all prompts, and an HTML page like the one displayed in the screenshot below will generate in your `dist` directory.
 
 This [demo](https://drive.google.com/file/d/15X5Y2DvB4sCdZF4dJ79b4wmZmRyJWjm7/view?usp=sharing) shows the app in action!
 
+## Screenshots
+
+![generated HTML](./dist/assets/images/sreenshots/genereted_html.png)
+
 #### Questions
 
-**How to reach me**
+If you have any question about the application, feel free to reach out here:
 
 - <a href="https://github.com/joesen-dev">Github</a>
-- Email senjoseph90@gmail.com
