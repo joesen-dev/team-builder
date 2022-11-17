@@ -15,170 +15,129 @@ module.exports = (teamMembers, employeeIDs) => {
       <!--Let browser know website is optimized for mobile-->
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-      <link rel="stylesheet" href="./assets/css/style.css" type="text/css" />
+      <script src="https://kit.fontawesome.com/0703f73264.js" crossorigin="anonymous"></script>
       <title>Team Builder</title>
       <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
           integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous" />
+      <link rel="stylesheet" href="./assets/css/style.css" type="text/css" />
   </head>
   
   <body>
       <header>
-          <nav class="navbar sticky-top navbar-expand-lg" style="background-color: #596869ff;">
-              <div class="container-fluid">
-                  <a href="/" class="navbar-brand text-light">My Team</a>
+          <nav class="navbar sticky-top navbar-expand-lg" style="background-color: #36453bff;">
+              <div class="container-fluid d-flex justify-content-center">
+                  <h1><a href="/" class="navbar-brand text-light">My Team</a></h1>
               </div>
           </nav>
       </header>
-      <main class="container">
-          <section class="d-grid gap-3">
-              <div class="row">
-                  <!-- Manager -->
-                  <div class="col-sm-6 p-2 d-flex justify-content-center">
-                      <div class="card shadow p-3 mb-5 bg-body rounded" style="width: 18rem">
-                          <div class="card-body">
-                              <h5 class="card-title">${manager.firstName}</h5>
-                              <h6 class="card-subtitle mb-2 text-muted">Manager</h6>
-                              <table class="table table-sm shadow-sm p-3 bg-body rounded border border-dark credentials">
-                                  <tbody>
-                                      <tr>
-                                          <th scope="row">ID:</th>
-                                          <td colspan="2">${manager.id}</td>
-                                      </tr>
-                                      <tr>
-                                          <th scope="row">Email:</th>
-                                          <td colspan="2"><a href="mailto:${manager.email}">${manager.email}</a></td>
-                                      </tr>
-                                      <tr>
-                                          <th scope="row">Office:</th>
-                                          <td colspan="2">${manager.officeNumber}</td>
-                                      </tr>
-                                  </tbody>
-                              </table>
+      <main class="container text-center py-5">
+          <section class="row row-cols-lg-5 g-2 g-lg-3 d-flex justify-content-center">
+              <!-- JARED - Manager -->
+              <div class="col-sm-6 col-lg-4">
+                  <div class="card shadow mb-5 bg-body rounded">
+                      <div class="card-header text-start text-light p-3">
+                          <h4 class="card-title">${manager.firstName}</h4>
+                          <div>
+                              <h5 class="card-subtitle mb-2 text-light"><span class="fa-solid fa-mug-hot p-1"></span>
+                                  Manager
+                              </h5>
+                          </div>
+                      </div>
+                      <div class="card-body px-4 py-5">
+                          <div class="card text-start">
+                              <ul class=" list-group list-group-flush">
+                                  <li class="list-group-item"><strong>ID:</strong> ${manager.id}</li>
+                                  <li class="list-group-item"><strong>Email:</strong> <a href="mailto:${manager.email}">${manager.email}</a></li>
+                                  <li class="list-group-item"><strong>Office:</strong> ${manager.officeNumber}</li>
+                              </ul>
                           </div>
                       </div>
                   </div>
-                  <!-- ALEC - Engineer -->
-                  <div class="col-sm-6 p-2 d-flex justify-content-center">
-                      <div class="card shadow p-3 mb-5 bg-body rounded" style="width: 18rem">
-                          <div class="card-body">
-                              <h5 class="card-title">${engineer1.firstName}</h5>
-                              <h6 class="card-subtitle mb-2 text-muted">Engineer</h6>
-                              <table class="table table-sm shadow-sm p-3 bg-body rounded border border-dark credentials">
-                                  <tbody>
-                                      <tr>
-                                          <th scope="row">ID:</th>
-                                          <td colspan="2">${engineer1.id}</td>
-                                      </tr>
-                                      <tr>
-                                          <th scope="row">Email:</th>
-                                          <td colspan="2"><a href="mailto:${engineer1.email}">${engineer1.email}</a></td>
-                                      </tr>
-                                      <tr>
-                                          <th scope="row">Github:</th>
-                                          <td colspan="2">${engineer1.github}</td>
-                                      </tr>
-                                  </tbody>
-                              </table>
+              </div>
+              <!-- ALEC - Engineer -->
+              <div class="col-sm-6 col-lg-4">
+                  <div class="card shadow mb-5 bg-body rounded">
+                      <div class="card-header text-start text-light p-3">
+                          <h4 class="card-title">${engineer1.firstName}</h4>
+                          <div>
+                              <h5 class="card-subtitle mb-2 text-light"><span class="fa-solid fa-glasses"></span></span>
+                                  Engineer
+                              </h5>
+                          </div>
+                      </div>
+                      <div class="card-body px-4 py-5">
+                          <div class="card text-start">
+                              <ul class=" list-group list-group-flush">
+                                  <li class="list-group-item"><strong>ID:</strong> ${engineer1.id}</li>
+                                  <li class="list-group-item"><strong>Email:</strong> <a href="mailto:${engineer1.email}">${engineer1.email}</a></li>
+                                  <li class="list-group-item"><strong>GitHub:</strong> ${engineer1.github}</li>
+                              </ul>
                           </div>
                       </div>
                   </div>
-                  <!-- GRACE - Engineer -->
-                  <div class="col-sm-4 p-2 d-flex justify-content-center">
-                      <div class="card shadow p-3 mb-5 bg-body rounded" style="width: 18rem">
-                          <div class="card-body">
-                              <h5 class="card-title">Grace</h5>
-                              <h6 class="card-subtitle mb-2 text-muted">Engineer</h6>
-                              <table class="table table-sm shadow-sm p-3 bg-body rounded border border-dark credentials">
-                                  <tbody>
-                                      <tr>
-                                          <th scope="row">ID:</th>
-                                          <td colspan="2">3</td>
-                                      </tr>
-                                      <tr>
-                                          <th scope="row">Email:</th>
-                                          <td colspan="2">grace@fakemail.com</td>
-                                      </tr>
-                                      <tr>
-                                          <th scope="row">Github:</th>
-                                          <td colspan="2">3</td>
-                                      </tr>
-                                  </tbody>
-                              </table>
+              </div>
+              <!-- GRACE - Engineer -->
+              <div class="col-sm-6 col-lg-4">
+                  <div class="card shadow mb-5 bg-body rounded">
+                      <div class="card-header text-start text-light p-3">
+                          <h4 class="card-title">${engineer2.firstName}</h4>
+                          <div>
+                              <h5 class="card-subtitle mb-2 text-light"><span class="fa-solid fa-glasses"></span></span>
+                                  Engineer
+                              </h5>
+                          </div>
+                      </div>
+                      <div class="card-body px-4 py-5">
+                          <div class="card text-start">
+                              <ul class=" list-group list-group-flush">
+                                  <li class="list-group-item"><strong>ID:</strong> ${engineer2.id}</li>
+                                  <li class="list-group-item"><strong>Email:</strong> <a href="mailto:${engineer2.email}">${engineer2.email}</a></li>
+                                  <li class="list-group-item"><strong>GitHub:</strong> ${engineer2.github}</li>
+                              </ul>
                           </div>
                       </div>
                   </div>
-                  <!-- TAMMER -- Engineer-->
-                  <div class="col-sm-4 p-2 d-flex justify-content-center">
-                      <div class="card shadow p-3 mb-5 bg-body rounded" style="width: 18rem">
-                          <div class="card-body">
-                              <h5 class="card-title">Tammer</h5>
-                              <h6 class="card-subtitle mb-2 text-muted">Engineer</h6>
-                              <table class="table table-sm shadow-sm p-3 bg-body rounded border border-dark credentials">
-                                  <tbody>
-                                      <tr>
-                                          <th scope="row">ID:</th>
-                                          <td colspan="2">4</td>
-                                      </tr>
-                                      <tr>
-                                          <th scope="row">Email:</th>
-                                          <td colspan="2">tammer@fakemail.com</td>
-                                      </tr>
-                                      <tr>
-                                          <th scope="row">Github:</th>
-                                          <td colspan="2">4</td>
-                                      </tr>
-                                  </tbody>
-                              </table>
+              </div>
+              <!-- TAMMER - Engineer -->
+              <div class="col-sm-6 col-lg-4">
+                  <div class="card shadow mb-5 bg-body rounded">
+                      <div class="card-header text-start text-light p-3">
+                          <h4 class="card-title">${engineer3.firstName}</h4>
+                          <div>
+                              <h5 class="card-subtitle mb-2 text-light"><span class="fa-solid fa-glasses"></span></span>
+                                  Engineer
+                              </h5>
+                          </div>
+                      </div>
+                      <div class="card-body px-4 py-5">
+                          <div class="card text-start">
+                              <ul class=" list-group list-group-flush">
+                                  <li class="list-group-item"><strong>ID:</strong> ${engineer3.id}</li>
+                                  <li class="list-group-item"><strong>Email:</strong> <a href="mailto:${engineer3.email}">${engineer3.email}</a></li>
+                                  <li class="list-group-item"><strong>GitHub:</strong> ${engineer3.github}</li>
+                              </ul>
                           </div>
                       </div>
                   </div>
-                  <!-- JOHN - Intern -->
-                  <div class="col-sm-4 p-2 d-flex justify-content-center">
-                      <div class="card shadow p-3 mb-5 bg-body rounded" style="width: 18rem">
-                          <div class="card-body">
-                              <h5 class="card-title">John</h5>
-                              <h6 class="card-subtitle mb-2 text-muted">Intern</h6>
-                              <table class="table table-sm shadow-sm p-3 bg-body rounded border border-dark credentials">
-                                  <tbody>
-                                      <tr>
-                                          <th scope="row">ID:</th>
-                                          <td colspan="2">5</td>
-                                      </tr>
-                                      <tr>
-                                          <th scope="row">Email:</th>
-                                          <td colspan="2">john@fakemail.com</td>
-                                      </tr>
-                                      <tr>
-                                          <th scope="row">School:</th>
-                                          <td colspan="2">2University</td>
-                                      </tr>
-                                  </tbody>
-                              </table>
+              </div>
+              <!-- JOHN - Engineer -->
+              <div class="col-sm-6 col-lg-4">
+                  <div class="card shadow mb-5 bg-body rounded">
+                      <div class="card-header text-start text-light p-3">
+                          <h4 class="card-title">${intern.firstName}</h4>
+                          <div>
+                              <h5 class="card-subtitle mb-2 text-light"><span class="fa-solid fa-graduation-cap"></span>
+                                  Intern
+                              </h5>
                           </div>
                       </div>
-                  </div>
-                  <!-- Joseph -- Volunteer-->
-                  <div class="col-sm-12 p-2 d-flex justify-content-center">
-                      <div class="card shadow p-3 mb-5 bg-body rounded" style="width: 18rem">
-                          <div class="card-body">
-                              <h5 class="card-title">Joseph</h5>
-                              <h6 class="card-subtitle mb-2 text-muted">Fromt-end Developer</h6>
-                              <table class="table table-sm shadow-sm p-3 bg-body rounded border border-dark credentials">
-                                  <tbody>
-                                      <tr>
-                                          <th scope="row">ID:</th>
-                                          <td colspan="2">6</td>
-                                      </tr>
-                                      <tr>
-                                          <th scope="row">Email:</th>
-                                          <td colspan="2">joseph@fakemail.com</td>
-                                      </tr>
-                                      <tr>
-                                          <th scope="row">Github:</th>
-                                          <td colspan="2">6</td>
-                                      </tr>
-                                  </tbody>
-                              </table>
+                      <div class="card-body px-4 py-5">
+                          <div class="card text-start">
+                              <ul class=" list-group list-group-flush">
+                                  <li class="list-group-item"><strong>ID:</strong> ${intern.id}</li>
+                                  <li class="list-group-item"><strong>Email:</strong> <a href="mailto:${intern.email}">${intern.email}</a></li>
+                                  <li class="list-group-item"><strong>School:</strong> ${intern.school}</li>
+                              </ul>
                           </div>
                       </div>
                   </div>
